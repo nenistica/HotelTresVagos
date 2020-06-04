@@ -21,14 +21,14 @@ public class Reserva {
     private Date fechaIngreso;
     @Column(name = "fecha_egreso")
     private Date fechaEgreso;
-    private Integer habitacion; //No coloco anotación porque se llaman igual en la db
+    private int habitacion; //No coloco anotación porque se llaman igual en la db
     @Column(name = "importe_reserva")
     private BigDecimal importeReserva;
     @Column(name = "importe_total")
     private BigDecimal importeTotal;
     @Column(name = "importe_pagado")
     private BigDecimal importePagado;
-    @Column(name = "tipo_estado")
+    @Column(name = "estado")
     private int tipoEstadoId; //Por ahora vamos a crear esto como int 
     @ManyToOne
     @JoinColumn(name = "huesped_id", referencedColumnName = "huesped_id")
