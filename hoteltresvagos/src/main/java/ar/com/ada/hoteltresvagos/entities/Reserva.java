@@ -28,7 +28,7 @@ public class Reserva {
     private BigDecimal importeTotal;
     @Column(name = "importe_pagado")
     private BigDecimal importePagado;
-    @Column(name = "estado")
+    @Column(name = "estado_id")
     private int tipoEstadoId; //Por ahora vamos a crear esto como int 
     @ManyToOne
     @JoinColumn(name = "huesped_id", referencedColumnName = "huesped_id")

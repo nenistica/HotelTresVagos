@@ -135,7 +135,7 @@ public class ABM {
         
         reserva.setFechaIngreso(fechaIngreso); 
         reserva.setFechaEgreso(fechaEgreso); //por ahora 1 dia.
-        reserva.setTipoEstadoId(20); //En mi caso, 20 significa pagado.
+        reserva.setTipoEstadoId(2); //En mi caso, 2 significa pagado.
         reserva.setHuesped(huesped); //Esta es la relacion bidireccional
         
         //Actualizo todos los objeto
@@ -293,6 +293,7 @@ public class ABM {
         System.out.println("3. Para modificar un huesped.");
         System.out.println("4. Para ver el listado.");
         System.out.println("5. Buscar un huesped por nombre especifico(SQL Injection)).");
+        System.out.println("6. Crear Reserva.");
         System.out.println("0. Para terminar.");
         System.out.println("");
         System.out.println("=======================================");
